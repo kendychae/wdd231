@@ -4,33 +4,45 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Live Website</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="author" content="Your Name" />
+    <meta name="description" content="WDD 231 - Course Home Page" />
+    <title>WDD 231 - Course Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
 <body>
     <header>
-        <h1>Welcome to My Live Website</h1>
+        <h1>WDD 231: Web Frontend Development II</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Course Home</a></li>
+                <li><a href="#">Assignments</a></li>
+                <li><a href="#">Resources</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is a sample homepage built with HTML and CSS. You can publish this on GitHub Pages or any hosting
-                service.</p>
+        <section class="intro">
+            <h2>Welcome!</h2>
+            <p>This is the home page for WDD 231: Web Frontend Development II.</p>
+            <img src="images/profile.jpg" alt="Your profile photo" width="200">
         </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>This section gives information about the purpose of the site and its creator.</p>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hi! I'm [Your Name]. I'm learning advanced frontend skills like responsive design, JavaScript DOM
+                manipulation, and accessibility. I'm excited to build professional, modern web experiences.</p>
         </section>
+    </main>
 
-        <section id="contact">
-            <h2>Contact</h
+    <footer>
+        <p>&copy; <span id="year"></span> Your Name | WDD 231 | <a href="https://www.byui.edu"
+                target="_blank">BYU–Idaho</a></p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
