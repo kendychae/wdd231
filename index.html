@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Your Name" />
-    <meta name="description" content="WDD 231 - Course Home Page" />
+    <meta name="author" content="Kendahl Bingham" />
+    <meta name="description" content="WDD 231 Course Home Page for Kendahl Bingham - Web Frontend Development II" />
     <title>WDD 231 - Course Home Page</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/styles.css" />
@@ -26,23 +26,27 @@
     <main>
         <section class="intro">
             <h2>Welcome!</h2>
-            <p>This is the home page for WDD 231: Web Frontend Development II.</p>
-            <img src="images/profile.jpg" alt="Your profile photo" width="200">
+            <p>This is the course homepage for WDD 231: Web Frontend Development II.</p>
+            <picture>
+                <source srcset="images/profile.webp" type="image/webp">
+                <img src="images/profile.jpg" alt="Portrait of Kendahl Bingham" width="200" loading="lazy">
+            </picture>
         </section>
 
         <section class="about">
             <h2>About Me</h2>
             <p>Hi! I'm Kendahl Bingham. I'm learning advanced frontend skills like responsive design, JavaScript DOM
-                manipulation, and accessibility. I'm excited to build professional, modern web experiences.</p>
+                manipulation, and accessibility. I'm excited to build professional, modern web experiences this
+                semester.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> Kendahl Bingham | WDD 231 | <a href="https://www.byui.edu"
-                target="_blank">BYU–Idaho</a></p>
+        <p>&copy; <span id="year"></span> Kendahl Bingham | WDD 231 | <a href="https://www.byui.edu" target="_blank"
+                rel="noopener">BYU–Idaho</a></p>
     </footer>
 
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js" defer></script>
 </body>
 
 </html>

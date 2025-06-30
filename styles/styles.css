@@ -1,31 +1,82 @@
+/* Base reset & fonts */
 body {
-    font-family: Arial, sans-serif;
+    font-family: system-ui, Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
     background-color: #006699;
-    color: white;
-    padding: 1rem;
+    color: #fff;
+    padding: 1.5rem 1rem;
     text-align: center;
 }
 
+header h1 {
+    margin: 0 0 0.5rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+}
+
 nav a {
-    color: white;
-    margin: 0 10px;
+    color: #fff;
     text-decoration: none;
+    font-weight: 600;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
 main {
-    padding: 2rem;
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
+section {
+    margin-bottom: 2rem;
+}
+
+img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+/* Footer */
 footer {
     background-color: #ddd;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #222;
+}
+
+/* Responsive improvements */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
