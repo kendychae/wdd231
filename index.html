@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Kendahl Bingham" />
-    <meta name="description" content="WDD 231 Course Home Page for Kendahl Bingham - Web Frontend Development II" />
-    <title>WDD 231: Web Frontend Development II</title>
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kendahl Bingham">
+    <meta name="description"
+        content="Homepage for WDD 231: Web Frontend Development II by Kendahl Bingham. Learn frontend skills including responsive design and JavaScript.">
+    <title>Kendahl Bingham | WDD 231: Web Frontend Development II Course Home</title>
+
+    <!-- Google Fonts Preconnect and Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <header>
-        <h1>WDD 231: Web Frontend Development II</h1>
-        <nav>
+        <nav aria-label="Primary Navigation">
             <ul>
-                <li><a href="#">Course Home</a></li>
+                <li><a href="#" aria-current="page">Course Home</a></li>
                 <li><a href="#">Assignments</a></li>
                 <li><a href="#">Resources</a></li>
             </ul>
@@ -24,9 +29,11 @@
     </header>
 
     <main>
+        <h1>WDD 231: Web Frontend Development II - Course Home</h1>
+
         <section class="intro">
             <h2>Welcome!</h2>
-            <p>This is the course homepage for WDD 231: Web Frontend Development II .</p>
+            <p>This is the course homepage for WDD 231: Web Frontend Development II.</p>
             <picture>
                 <source srcset="images/profile.webp" type="image/webp">
                 <img src="images/profile.jpg" alt="Portrait of Kendahl Bingham" width="200" loading="lazy">
@@ -39,11 +46,17 @@
                 manipulation, and accessibility. I'm excited to build professional, modern web experiences this
                 semester.</p>
         </section>
+
+        <section class="course-goals">
+            <h2>Course Goals</h2>
+            <p>This course focuses on developing robust frontend skills including HTML5 semantics, CSS layouts,
+                accessibility compliance, and JavaScript programming for dynamic web pages.</p>
+        </section>
     </main>
 
     <footer>
         <p>&copy; <span id="year"></span> Kendahl Bingham | WDD 231 | <a href="https://www.byui.edu" target="_blank"
-                rel="noopener">BYU–Idaho</a></p>
+                rel="noopener noreferrer">BYU–Idaho</a></p>
     </footer>
 
     <script src="scripts/main.js" defer></script>
