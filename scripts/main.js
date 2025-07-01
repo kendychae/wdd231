@@ -3,14 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('year').textContent = new Date().getFullYear();
     document.getElementById('last-modified').textContent = document.lastModified;
   
-    // Course data array
+    // ✅ Updated Course Data (with real classes and subjects)
     const courses = [
-      { code: "WDD 130", name: "Web Fundamentals", subject: "Web", credits: 3, completed: true },
-      { code: "WDD 230", name: "Frontend Development I", subject: "Web", credits: 3, completed: true },
-      { code: "WDD 231", name: "Frontend Development II", subject: "Web", credits: 3, completed: false },
-      { code: "CSE 110", name: "Programming Basics", subject: "Programming", credits: 2, completed: true },
-      { code: "CSE 111", name: "Programming with Functions", subject: "Programming", credits: 3, completed: true },
-      { code: "UXD 100", name: "User Experience Design", subject: "UX", credits: 2, completed: false },
+      { code: "CSE 110", name: "Programming with Classes", subject: "Programming", credits: 2, completed: true },
+      { code: "WDD 231", name: "Web Frontend Development I", subject: "Web", credits: 2, completed: true },
+      { code: "WDD 330", name: "Web Frontend Development II", subject: "Web", credits: 2, completed: false },
+      { code: "CSE 340", name: "Web Backend Development", subject: "Programming", credits: 3, completed: false },
+      { code: "GS 170", name: "Career Development", subject: "UX", credits: 1, completed: true }
     ];
   
     const courseList = document.getElementById("course-list");
