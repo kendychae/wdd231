@@ -2,22 +2,22 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Kendahl Bingham">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kendahl Bingham" />
     <meta name="description"
-        content="Homepage for WDD 231: Web Frontend Development II by Kendahl Bingham. Learn frontend skills including responsive design and JavaScript.">
+        content="Homepage for WDD 231: Web Frontend Development II by Kendahl Bingham. Learn frontend skills including responsive design and JavaScript." />
     <title>Kendahl Bingham | WDD 231: Web Frontend Development II Course Home</title>
 
     <!-- Google Fonts Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Google Fonts Link -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
 <body>
@@ -38,28 +38,52 @@
             <h2>Welcome!</h2>
             <p>This is the course homepage for WDD 231: Web Frontend Development II.</p>
             <picture>
-                <source srcset="images/profile.webp" type="image/webp">
-                <img src="images/profile.jpg" alt="Portrait of Kendahl Bingham" width="200" loading="lazy">
+                <source srcset="images/profile.webp" type="image/webp" />
+                <img src="images/profile.jpg" alt="Portrait of Kendahl Bingham" width="200" loading="lazy" />
             </picture>
         </section>
 
         <section class="about">
             <h2>About Me</h2>
-            <p>Hi! I'm Kendahl Bingham. I'm learning advanced frontend skills like responsive design, JavaScript DOM
+            <p>
+                Hi! I'm Kendahl Bingham. I'm learning advanced frontend skills like responsive design, JavaScript DOM
                 manipulation, and accessibility. I'm excited to build professional, modern web experiences this
-                semester.</p>
+                semester.
+            </p>
         </section>
 
         <section class="course-goals">
             <h2>Course Goals</h2>
-            <p>This course focuses on developing robust frontend skills including HTML5 semantics, CSS layouts,
-                accessibility compliance, and JavaScript programming for dynamic web pages.</p>
+            <p>
+                This course focuses on developing robust frontend skills including HTML5 semantics, CSS layouts,
+                accessibility
+                compliance, and JavaScript programming for dynamic web pages.
+            </p>
+        </section>
+
+        <section class="course-filter">
+            <h2>Filter by Subject</h2>
+            <div id="filter-buttons">
+                <button data-subject="All">All</button>
+                <button data-subject="Web">Web</button>
+                <button data-subject="Programming">Programming</button>
+                <button data-subject="UX">UX</button>
+            </div>
+        </section>
+
+        <section id="course-list-section">
+            <h2>Course List</h2>
+            <ul id="course-list"></ul>
+            <p>Total Credits: <span id="total-credits">0</span></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> Kendahl Bingham | WDD 231 | <a href="https://www.byui.edu" target="_blank"
-                rel="noopener noreferrer">BYU–Idaho</a></p>
+        <p>
+            &copy; <span id="year"></span> Kendahl Bingham | WDD 231 |
+            <a href="https://www.byui.edu" target="_blank" rel="noopener noreferrer">BYU–Idaho</a><br>
+            Last Modified: <span id="last-modified"></span>
+        </p>
     </footer>
 
     <script src="scripts/main.js" defer></script>

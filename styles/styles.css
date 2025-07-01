@@ -1,6 +1,6 @@
 /* Base reset & fonts */
 body {
-    font-family: system-ui, Arial, sans-serif;
+    font-family: 'Open Sans', system-ui, Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
@@ -14,10 +14,6 @@ header {
     color: #fff;
     padding: 1.5rem 1rem;
     text-align: center;
-}
-
-header h1 {
-    margin: 0 0 0.5rem;
 }
 
 /* Navigation */
@@ -60,6 +56,42 @@ img {
     margin: 1rem 0;
 }
 
+/* Filter buttons */
+#filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#filter-buttons button {
+    background-color: #006699;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#filter-buttons button:hover {
+    background-color: #004c73;
+}
+
+/* Course list */
+#course-list li {
+    background: #fff;
+    padding: 1rem;
+    border-left: 5px solid #006699;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.completed {
+    border-left-color: green;
+    background-color: #e6f4e6;
+}
+
 /* Footer */
 footer {
     background-color: #ddd;
@@ -69,7 +101,7 @@ footer {
     color: #222;
 }
 
-/* Responsive improvements */
+/* Responsive */
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.5rem;
