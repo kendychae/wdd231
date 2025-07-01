@@ -10,12 +10,15 @@
     <title>Kendahl Bingham | WDD 231: Web Frontend Development II Course Home</title>
 
     <!-- Google Fonts Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Google Fonts Link -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"
-        crossorigin="anonymous">
+    <!-- Google Fonts Stylesheet with best practice preload and noscript fallback -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" media="all"
+        onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </noscript>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -71,8 +74,14 @@
 
         <section id="course-list-section">
             <h2>Course List</h2>
-            <ul id="course-list"></ul>
-            <p>Total Credits: <span id="total-credits">0</span></p>
+            <ul id="course-list">
+                <li>CSE110 Programming with classes (2 credits)</li>
+                <li>WDD231 Web Frontend Development I (2 credits)</li>
+                <li>WDD330 Web Frontend Development II (2 credits)</li>
+                <li>CSE340 Web Backend Development (3 credits)</li>
+                <li>GS170 Career Development (1 credit)</li>
+            </ul>
+            <p>Total Credits: <span id="total-credits">10</span></p>
         </section>
     </main>
 
