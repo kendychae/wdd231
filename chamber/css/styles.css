@@ -1,0 +1,119 @@
+/* ====== BASE STYLES ====== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #222;
+}
+
+/* ====== HEADER & NAV ====== */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+/* ====== MAIN CONTENT ====== */
+main {
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+/* ====== VIEW TOGGLE BUTTONS ====== */
+.view-toggle {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.view-toggle button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* ====== MEMBERS SECTION ====== */
+#members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+#members.list-view {
+    display: block;
+}
+
+.member-card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.member-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.member-card h3 {
+    margin: 0.5rem 0;
+    color: #003366;
+}
+
+.member-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #0066cc;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #ffcc00;
+}

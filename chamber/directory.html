@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Directory page for [Your City] Chamber of Commerce" />
+    <meta name="author" content="Kendahl Bingham" />
+    <title>[Your City] Chamber Directory</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Social Meta Tags -->
+    <meta property="og:title" content="[Your City] Chamber Directory">
+    <meta property="og:description" content="Support local businesses with our Chamber Member Directory.">
+    <meta property="og:image" content="images/share-image.jpg">
+    <meta property="og:url" content="https://kendychae.github.io/wdd231/chamber/directory.html">
+
+    <!-- Normalize and Main CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>[Your City] Chamber of Commerce</h1>
+        <nav>
+            <button id="menuBtn">☰ Menu</button>
+            <ul id="navMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Member Directory</h2>
+
+        <div class="view-toggle">
+            <button id="gridBtn">Grid View</button>
+            <button id="listBtn">List View</button>
+        </div>
+
+        <section id="members" class="grid-view">
+            <!-- Cards will be loaded here by JS -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at info@[yourcity]chamber.com</p>
+        <p>&copy; <span id="year"></span> | Kendahl Bingham | WDD 231 | Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/directory.js" defer></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>

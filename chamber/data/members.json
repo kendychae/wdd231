@@ -1,0 +1,59 @@
+[
+    {
+      "name": "Kendy Coffee Co.",
+      "address": "123 Brew Street, Roast City",
+      "phone": "555-123-4567",
+      "website": "https://kendycoffee.com",
+      "image": "coffee.jpg",
+      "membership": 3
+    },
+    {
+      "name": "Green Gardens",
+      "address": "456 Plant Lane, Bloomtown",
+      "phone": "555-987-6543",
+      "website": "https://greengardens.com",
+      "image": "garden.jpg",
+      "membership": 2
+    },
+    {
+      "name": "Code & Tech Solutions",
+      "address": "789 Silicon Blvd, Dev City",
+      "phone": "555-246-1357",
+      "website": "https://codeandtech.com",
+      "image": "tech.jpg",
+      "membership": 1
+    },
+    {
+      "name": "QuickFix Auto",
+      "address": "321 Garage Rd, Motorville",
+      "phone": "555-765-4321",
+      "website": "https://quickfixauto.com",
+      "image": "auto.jpg",
+      "membership": 2
+    },
+    {
+      "name": "Bright Smiles Dental",
+      "address": "951 Smile St, Happyville",
+      "phone": "555-159-7531",
+      "website": "https://brightsmiles.com",
+      "image": "dental.jpg",
+      "membership": 3
+    },
+    {
+      "name": "Peak Fitness",
+      "address": "852 Strong Ave, Fit City",
+      "phone": "555-951-3574",
+      "website": "https://peakfitness.com",
+      "image": "fitness.jpg",
+      "membership": 1
+    },
+    {
+      "name": "Local Harvest Market",
+      "address": "159 Farm Ln, Growtown",
+      "phone": "555-654-3210",
+      "website": "https://localharvest.com",
+      "image": "market.jpg",
+      "membership": 2
+    }
+  ]
+  
