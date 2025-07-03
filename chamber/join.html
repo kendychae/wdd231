@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Join the Timbuktu Chamber of Commerce to grow your business and network locally." />
+    <meta name="author" content="Kendahl Bingham" />
+    <title>Join the Chamber</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Join the Timbuktu Chamber" />
+    <meta property="og:description"
+        content="Become a member and enjoy benefits like networking, advertising, and more." />
+    <meta property="og:image" content="images/share-image.webp" />
+    <meta property="og:url" content="https://kendychae.github.io/wdd231/chamber/join.html" />
+
+    <!-- Google Fonts + Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/logo.png" alt="Timbuktu Chamber of Commerce Logo" width="50" height="50" />
+            <h1>Timbuktu Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <button id="menuBtn" aria-label="Toggle Menu">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the Chamber</h1>
+
+        <section class="benefits">
+            <h2>Why Join?</h2>
+            <ul>
+                <li>Business directory listing</li>
+                <li>Exclusive networking events</li>
+                <li>Training workshops</li>
+                <li>Free marketing via social media</li>
+                <li>Sponsorship opportunities</li>
+                <li>Advertising discounts</li>
+            </ul>
+        </section>
+
+        <section class="membership-levels">
+            <h2>Membership Levels</h2>
+            <article>
+                <h3>Non-Profit</h3>
+                <p>Includes directory listing and community events. Great for charities and educational groups.</p>
+            </article>
+            <article>
+                <h3>Silver</h3>
+                <p>All Non-Profit perks plus social media promotion and monthly luncheons.</p>
+            </article>
+            <article>
+                <h3>Gold</h3>
+                <p>All Silver perks plus website advertising, sponsorships, and premium event placement.</p>
+            </article>
+        </section>
+
+        <section class="membership-form">
+            <h2>Membership Application</h2>
+            <form action="#" method="get">
+                <label for="name">Full Name*</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="organization">Organization</label>
+                <input type="text" id="organization" name="organization">
+
+                <label for="level">Membership Level*</label>
+                <select id="level" name="level" required>
+                    <option value="">Select Level</option>
+                    <option value="non-profit">Non-Profit</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+
+                <label for="comments">Why do you want to join?</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: <a href="mailto:info@tchamber.com">info@timbuktuchamber.com</a></p>
+        <p>
+            &copy; <span id="year"></span> | Kendahl Bingham | WDD 231<br>
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/footer-info.js" defer></script>
+    <script src="scripts/nav-toggle.js" defer></script>
+</body>
+
+</html>

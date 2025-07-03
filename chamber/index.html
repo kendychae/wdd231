@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Welcome to the Timbuktu Chamber of Commerce Home Page. Get updates, weather, and spotlighted businesses." />
+    <meta name="author" content="Kendahl Bingham" />
+    <title>Timbuktu Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <meta property="og:title" content="Timbuktu Chamber Home" />
+    <meta property="og:description"
+        content="Community updates, weather, and spotlighted members of the Timbuktu Chamber of Commerce." />
+    <meta property="og:image" content="images/share-image.webp" />
+    <meta property="og:url" content="https://kendychae.github.io/wdd231/chamber/index.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/logo.png" alt="Timbuktu Chamber of Commerce Logo" width="50" height="50">
+            <h1>Timbuktu Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <button id="menuBtn" aria-label="Toggle Menu">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Timbuktu Chamber of Commerce</h1>
+
+        <section>
+            <h2>Community Information</h2>
+            <p>Serving local businesses and building community connections in Timbuktu.</p>
+        </section>
+
+        <section>
+            <h2>Weather</h2>
+            <p id="weather">Loading current weather...</p>
+        </section>
+
+        <section>
+            <h2>Call to Action</h2>
+            <a class="cta-button" href="join.html">Join the Chamber Today</a>
+        </section>
+
+        <section>
+            <h2>Business Spotlights</h2>
+            <div class="spotlights">
+                <!-- Spotlight cards injected by JS or hardcoded -->
+                <p>Spotlighted Member Businesses Coming Soon!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: <a href="mailto:info@tchamber.com">info@timbuktuchamber.com</a></p>
+        <p>&copy; <span id="year"></span> | Kendahl Bingham | WDD 231<br>Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/footer-info.js" defer></script>
+    <script>
+        // Dummy weather for now
+        document.getElementById('weather').textContent = "Sunny, 85°F";
+    </script>
+</body>
+
+</html>

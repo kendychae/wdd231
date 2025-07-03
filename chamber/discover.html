@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Timbuktu - Learn about our history, demographics, and upcoming events.">
+    <meta name="author" content="Kendahl Bingham">
+    <title>Discover Timbuktu</title>
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <meta property="og:title" content="Discover Timbuktu">
+    <meta property="og:description" content="Explore the history, people, and culture of Timbuktu.">
+    <meta property="og:image" content="images/share-image.webp">
+    <meta property="og:url" content="https://kendychae.github.io/wdd231/chamber/discover.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/logo.png" alt="Timbuktu Chamber of Commerce Logo" width="50" height="50">
+            <h1>Timbuktu Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <button id="menuBtn" aria-label="Toggle Menu">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Discover Timbuktu</h1>
+
+        <section>
+            <h2>History</h2>
+            <p>Timbuktu has a rich cultural heritage, known for its ancient manuscripts and trading roots.</p>
+        </section>
+
+        <section>
+            <h2>Demographics</h2>
+            <p>Our city is home to a vibrant mix of cultures, with a population of approximately 54,000 residents.</p>
+        </section>
+
+        <section>
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Farmers Market – Every Saturday Morning</li>
+                <li>Annual Business Gala – September 15</li>
+                <li>Community Clean-Up – August 12</li>
+            </ul>
+        </section>
+
+        <section class="image-montage">
+            <h2>Local Highlights</h2>
+            <div class="montage">
+                <img src="images/site1.webp" alt="Historic Timbuktu Site">
+                <img src="images/site2.webp" alt="Cultural Festival">
+                <img src="images/site3.webp" alt="Downtown Area">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: <a href="mailto:info@tchamber.com">info@timbuktuchamber.com</a></p>
+        <p>&copy; <span id="year"></span> | Kendahl Bingham | WDD 231<br>Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/footer-info.js" defer></script>
+</body>
+
+</html>
