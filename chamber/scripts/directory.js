@@ -15,7 +15,7 @@ async function getMembers() {
 }
 
 function displayMembers(members) {
-  memberContainer.innerHTML = ""; // clear existing
+  memberContainer.innerHTML = "";
 
   members.forEach(member => {
     const card = document.createElement("div");
@@ -26,23 +26,26 @@ function displayMembers(members) {
       <img src="images/${member.image}" alt="${member.name} logo" loading="lazy" width="200">
       <p><strong>Address:</strong> ${member.address}</p>
       <p><strong>Phone:</strong> ${member.phone}</p>
-      <a href="${member.website}" target="_blank">Visit Website</a>
+      <a href="${member.website}" target="_blank" rel="noopener">Visit Website</a>
     `;
 
     memberContainer.appendChild(card);
   });
 }
 
-// Toggle view
+// View toggle
 gridBtn.addEventListener("click", () => {
   memberContainer.classList.add("grid-view");
   memberContainer.classList.remove("list-view");
+  gridBtn.setAttribute("aria-pressed", "true");
+  listBtn.setAttribute("aria-pressed", "false");
 });
 
 listBtn.addEventListener("click", () => {
   memberContainer.classList.add("list-view");
   memberContainer.classList.remove("grid-view");
+  gridBtn.setAttribute("aria-pressed", "false");
+  listBtn.setAttribute("aria-pressed", "true");
 });
 
-// Load data
 getMembers();

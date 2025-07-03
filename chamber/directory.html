@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Directory page for Timbuktu Chamber of Commerce">
+    <meta name="description"
+        content="Explore the Timbuktu Chamber of Commerce Member Directory and support our local businesses.">
     <meta name="author" content="Kendahl Bingham">
     <title>Timbuktu Chamber Directory</title>
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
-    <!-- Social Media Meta Tags -->
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Timbuktu Chamber Directory">
     <meta property="og:description" content="Support local businesses with our Chamber Member Directory.">
     <meta property="og:image" content="images/share-image.webp">
@@ -30,7 +31,7 @@
 <body>
     <header>
         <div class="logo-title">
-            <img src="images/logo.png" alt="Timbuktu Chamber of Commerce Logo" width="50" height="50">
+            <img src="https://via.placeholder.com/50" alt="Chamber logo placeholder" width="50" height="50">
             <h1>Timbuktu Chamber of Commerce</h1>
         </div>
         <nav>
@@ -45,15 +46,15 @@
     </header>
 
     <main>
-        <h2>Member Directory</h2>
+        <h1>Member Directory</h1>
 
         <div class="view-toggle">
-            <button id="gridBtn" aria-label="Grid View">Grid View</button>
-            <button id="listBtn" aria-label="List View">List View</button>
+            <button id="gridBtn" aria-label="Grid View" aria-pressed="true">Grid View</button>
+            <button id="listBtn" aria-label="List View" aria-pressed="false">List View</button>
         </div>
 
         <section id="members" class="grid-view" aria-live="polite">
-            <!-- JavaScript will populate member cards here -->
+            <!-- Member cards inserted by JS -->
         </section>
     </main>
 
@@ -64,7 +65,7 @@
         </p>
     </footer>
 
-    <!-- External JS Only -->
+    <!-- External JavaScript -->
     <script src="scripts/directory.js" defer></script>
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
