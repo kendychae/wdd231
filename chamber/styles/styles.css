@@ -21,15 +21,16 @@ header {
     align-items: center;
 }
 
-header .logo {
+header .logo-title {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-header h1 {
+header .site-name {
     margin: 0;
     font-size: 1.5rem;
+    font-weight: 600;
 }
 
 nav {
@@ -150,28 +151,131 @@ h2 {
     text-decoration: underline;
 }
 
-/* ====== FOOTER ====== */
-footer {
-    background: #003366;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+/* ====== FORM STYLES ====== */
+.membership-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
 }
 
-footer .footer-content {
+.membership-form form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
 }
 
-footer a {
-    color: #ffcc00;
-    text-decoration: none;
+.membership-form label {
+    font-weight: 600;
+    color: #003366;
 }
 
-footer .social-icons a {
-    margin: 0 0.5rem;
+.membership-form input,
+.membership-form select,
+.membership-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.membership-form button {
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.membership-form button:hover {
+    background-color: #004080;
+}
+
+/* ====== BENEFITS & MEMBERSHIP LEVELS ====== */
+.benefits,
+.membership-levels {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.benefits ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.benefits li {
+    margin-bottom: 0.5rem;
+}
+
+.membership-levels article {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.membership-levels article:last-child {
+    border-bottom: none;
+}
+
+.membership-levels h3 {
+    color: #003366;
+    margin-bottom: 0.5rem;
+}
+
+/* ====== DISCOVER PAGE STYLES ====== */
+.image-montage {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.montage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.montage img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== CALL TO ACTION BUTTON ====== */
+.cta-button {
+    display: inline-block;
+    background-color: #003366;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #004080;
+}
+
+/* ====== SPOTLIGHTS ====== */
+.spotlights {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
 }
 
 /* ====== RESPONSIVE ====== */
@@ -184,7 +288,7 @@ footer .social-icons a {
         padding: 1rem 0;
     }
 
-    nav ul.show {
+    nav ul.open {
         display: flex;
     }
 
@@ -194,5 +298,20 @@ footer .social-icons a {
 
     footer .footer-content {
         align-items: flex-start;
+    }
+
+    .membership-form {
+        padding: 1.5rem;
+    }
+
+    .benefits,
+    .membership-levels,
+    .image-montage,
+    .spotlights {
+        padding: 1rem;
+    }
+
+    .montage {
+        grid-template-columns: 1fr;
     }
 }
