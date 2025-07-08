@@ -41,16 +41,40 @@
     </header>
 
     <main>
-        <h1>Welcome to Timbuktu Chamber of Commerce</h1>
+        <section class="hero">
+            <img src="images/logo.png" alt="Timbuktu Chamber of Commerce - Supporting Local Business" class="hero-image">
+            <div class="hero-content">
+                <h1>Welcome to Timbuktu Chamber of Commerce</h1>
+                <p>Connecting businesses, building community, fostering growth</p>
+            </div>
+        </section>
 
         <section>
-            <h2>Community Information</h2>
-            <p>Serving local businesses and building community connections in Timbuktu.</p>
+            <h2>Current Events</h2>
+            <div class="events">
+                <article class="event">
+                    <h3>Annual Business Expo</h3>
+                    <p><strong>Date:</strong> March 15, 2025</p>
+                    <p>Join us for our biggest networking event of the year featuring local businesses and opportunities.</p>
+                </article>
+                <article class="event">
+                    <h3>Monthly Chamber Luncheon</h3>
+                    <p><strong>Date:</strong> Every 3rd Thursday</p>
+                    <p>Network with fellow business owners and learn about community initiatives.</p>
+                </article>
+            </div>
         </section>
 
         <section>
             <h2>Weather</h2>
-            <p id="weather">Loading current weather...</p>
+            <div id="weather-info">
+                <p><strong>Current:</strong> <span id="current-temp">Loading...</span></p>
+                <p><strong>Conditions:</strong> <span id="weather-description">Loading...</span></p>
+                <div id="forecast">
+                    <h3>3-Day Forecast</h3>
+                    <div id="forecast-container">Loading forecast...</div>
+                </div>
+            </div>
         </section>
 
         <section>
@@ -60,9 +84,8 @@
 
         <section>
             <h2>Business Spotlights</h2>
-            <div class="spotlights">
-                <!-- Spotlight cards injected by JS or hardcoded -->
-                <p>Spotlighted Member Businesses Coming Soon!</p>
+            <div id="spotlights" class="spotlights">
+                <!-- Spotlight cards will be loaded by JavaScript -->
             </div>
         </section>
     </main>
@@ -75,10 +98,7 @@
 
     <script src="scripts/scripts/nav-toggle.js" defer></script>
     <script src="scripts/footer-info.js" defer></script>
-    <script>
-        // Dummy weather for now
-        document.getElementById('weather').textContent = "Sunny, 85°F";
-    </script>
+    <script src="scripts/home.js" defer></script>
 </body>
 
 </html>
