@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Thank you for applying to join the Timbuktu Chamber of Commerce. Your application has been received.">
+    <meta name="author" content="Kendahl Bingham">
+    <title>Thank You - Timbuktu Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <meta property="og:title" content="Thank You - Timbuktu Chamber">
+    <meta property="og:description"
+        content="Your membership application has been received. Welcome to the Timbuktu Chamber of Commerce community.">
+    <meta property="og:image" content="https://kendychae.github.io/wdd231/chamber/images/share-image.webp">
+    <meta property="og:url" content="https://kendychae.github.io/wdd231/chamber/thankyou.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/logo.png" alt="Timbuktu Chamber of Commerce Logo" width="50" height="50">
+            <p class="site-name">Timbuktu Chamber of Commerce</p>
+        </div>
+        <nav>
+            <button id="menuBtn" aria-label="Toggle Menu">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thank-you-hero">
+            <h1>Thank You for Your Application!</h1>
+            <p>We've received your membership application and will review it shortly.</p>
+        </section>
+
+        <section class="application-summary">
+            <h2>Application Summary</h2>
+            <div class="summary-content">
+                <div class="summary-item">
+                    <strong>Applicant Name:</strong>
+                    <span id="applicant-name">Not provided</span>
+                </div>
+                <div class="summary-item">
+                    <strong>Email Address:</strong>
+                    <span id="applicant-email">Not provided</span>
+                </div>
+                <div class="summary-item">
+                    <strong>Mobile Phone:</strong>
+                    <span id="applicant-phone">Not provided</span>
+                </div>
+                <div class="summary-item">
+                    <strong>Business/Organization:</strong>
+                    <span id="business-name">Not provided</span>
+                </div>
+                <div class="summary-item">
+                    <strong>Membership Level:</strong>
+                    <span id="membership-level">Not provided</span>
+                </div>
+                <div class="summary-item">
+                    <strong>Application Date:</strong>
+                    <span id="application-timestamp">Not provided</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="next-steps">
+            <h2>What Happens Next?</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Application Review</h3>
+                    <p>Our team will review your application within 2-3 business days.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Welcome Package</h3>
+                    <p>You'll receive a welcome email with member resources and next steps.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Onboarding Call</h3>
+                    <p>Schedule a call with our membership coordinator to get started.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Start Networking</h3>
+                    <p>Begin attending events and connecting with fellow members.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <h2>Questions?</h2>
+            <p>If you have any questions about your application or membership, please don't hesitate to contact us:</p>
+            <div class="contact-details">
+                <p><strong>Email:</strong> <a href="mailto:membership@timbuktuchamber.com">membership@timbuktuchamber.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></p>
+                <p><strong>Office Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM</p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Continue Exploring</h2>
+            <div class="cta-buttons">
+                <a href="index.html" class="cta-button">Return to Home</a>
+                <a href="directory.html" class="cta-button secondary">Browse Members</a>
+                <a href="discover.html" class="cta-button secondary">Discover Timbuktu</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: <a href="mailto:info@timbuktuchamber.com">info@timbuktuchamber.com</a></p>
+        <p>&copy; <span id="year"></span> | Kendahl Bingham | WDD 231<br>Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/scripts/nav-toggle.js" defer></script>
+    <script src="scripts/footer-info.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</body>
+
+</html>
