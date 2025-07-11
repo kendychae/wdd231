@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Historic Sankore University",
+        "address": "Avenue de l'Université, Timbuktu, Mali",
+        "description": "One of the world's first universities, Sankore was a center of Islamic learning and housed over 700,000 manuscripts. This UNESCO World Heritage site represents the golden age of Timbuktu's intellectual prominence.",
+        "image": "sankore-university.webp"
+    },
+    {
+        "id": 2,
+        "name": "Djinguereber Mosque",
+        "address": "Rue de la Mosquée, Timbuktu, Mali",
+        "description": "Built in 1327, this iconic mud-brick mosque is one of the oldest in West Africa. Its distinctive architecture and historical significance make it a must-visit landmark in Timbuktu.",
+        "image": "djinguereber-mosque.webp"
+    },
+    {
+        "id": 3,
+        "name": "Timbuktu Manuscripts Museum",
+        "address": "Place de l'Indépendance, Timbuktu, Mali",
+        "description": "Home to thousands of ancient manuscripts covering subjects from astronomy to poetry. These documents showcase Timbuktu's role as a center of learning and trade in medieval Africa.",
+        "image": "manuscripts-museum.webp"
+    },
+    {
+        "id": 4,
+        "name": "Niger River Port",
+        "address": "Port de Kabara, Timbuktu, Mali",
+        "description": "The historic port that connected Timbuktu to the Niger River trade routes. Today it remains an important transportation hub and offers scenic views of traditional boats and river life.",
+        "image": "niger-river-port.webp"
+    },
+    {
+        "id": 5,
+        "name": "Grand Market (Grand Marché)",
+        "address": "Avenue du Grand Marché, Timbuktu, Mali",
+        "description": "A bustling marketplace where locals trade everything from traditional crafts to spices. Experience the vibrant culture and find unique souvenirs representing Timbuktu's trading heritage.",
+        "image": "grand-market.webp"
+    },
+    {
+        "id": 6,
+        "name": "Sidi Yahya Mosque",
+        "address": "Quartier Sidi Yahya, Timbuktu, Mali",
+        "description": "Founded in the 15th century, this mosque features unique Sudanese architecture. Legend says its doors remained sealed for centuries until the right holy man arrived.",
+        "image": "sidi-yahya-mosque.webp"
+    },
+    {
+        "id": 7,
+        "name": "Traditional Salt Mines",
+        "address": "Northeast of Timbuktu, Taghaza Region, Mali",
+        "description": "Ancient salt mines that were crucial to Timbuktu's prosperity. These mines supplied salt across the Sahara and remain active today, showcasing traditional mining techniques.",
+        "image": "salt-mines.webp"
+    },
+    {
+        "id": 8,
+        "name": "Flame of Peace Monument",
+        "address": "Place de la Paix, Timbuktu, Mali",
+        "description": "A modern monument commemorating the peace process in Mali. This striking landmark represents hope for the future while honoring Timbuktu's resilient spirit.",
+        "image": "flame-peace-monument.webp"
+    }
+]

@@ -39,35 +39,33 @@
     </header>
 
     <main>
-        <h1>Discover Timbuktu</h1>
-
-        <section>
-            <h2>History</h2>
-            <p>Timbuktu has a rich cultural heritage, known for its ancient manuscripts and trading roots.</p>
-        </section>
-
-        <section>
-            <h2>Demographics</h2>
-            <p>Our city is home to a vibrant mix of cultures, with a population of approximately 54,000 residents.</p>
-        </section>
-
-        <section>
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li>Farmers Market – Every Saturday Morning</li>
-                <li>Annual Business Gala – September 15</li>
-                <li>Community Clean-Up – August 12</li>
-            </ul>
-        </section>
-
-        <section class="image-montage">
-            <h2>Local Highlights</h2>
-            <div class="montage">
-                <img src="images/auto.jpg" alt="Local Auto Business" loading="lazy">
-                <img src="images/market.jpg" alt="Local Market" loading="lazy">
-                <img src="images/coffee.jpg" alt="Local Coffee Shop" loading="lazy">
+        <div class="discover-container">
+            <div class="main-content">
+                <h1>Discover Timbuktu</h1>
+                <p class="intro">Explore the rich history, culture, and attractions that make Timbuktu a unique destination for visitors and prospective chamber members.</p>
+                
+                <div class="discover-grid" id="discover-grid">
+                    <!-- Cards will be loaded dynamically -->
+                </div>
             </div>
-        </section>
+            
+            <aside class="sidebar">
+                <div class="visitor-info" id="visitor-info">
+                    <!-- Visitor information will be displayed here -->
+                </div>
+                
+                <div class="quick-facts">
+                    <h3>Quick Facts</h3>
+                    <ul>
+                        <li><strong>Population:</strong> ~54,000</li>
+                        <li><strong>Founded:</strong> 5th century</li>
+                        <li><strong>UNESCO Status:</strong> World Heritage Site</li>
+                        <li><strong>Climate:</strong> Hot desert</li>
+                        <li><strong>Languages:</strong> French, Arabic, Songhai</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
     </main>
 
     <footer>
@@ -78,6 +76,7 @@
 
     <script src="scripts/scripts/nav-toggle.js" defer></script>
     <script src="scripts/footer-info.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
 </body>
 
 </html>
