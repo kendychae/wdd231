@@ -26,7 +26,7 @@ function displayDiscoverItems(items) {
         
         card.innerHTML = `
             <figure class="card-image">
-                <img src="images/${getPlaceholderImage(item.id)}" alt="${item.name}" loading="lazy">
+                <img src="images/discover/${item.image}" alt="${item.name}" loading="lazy">
             </figure>
             <div class="card-content">
                 <h2>${item.name}</h2>
@@ -80,20 +80,4 @@ function handleVisitorInfo() {
 // Learn more button functionality
 function learnMore(itemName) {
     alert(`Learn more about ${itemName} - This would typically link to a detailed page or external resource.`);
-}
-
-// Get placeholder image for discover items
-function getPlaceholderImage(itemId) {
-    // Using existing images as placeholders until proper WebP images are created
-    const placeholders = {
-        1: 'tech.jpg',        // University
-        2: 'garden.jpg',      // Mosque
-        3: 'coffee.jpg',      // Museum
-        4: 'market.jpg',      // Port
-        5: 'auto.jpg',        // Market
-        6: 'fitness.jpg',     // Mosque
-        7: 'dental.jpg',      // Salt mines
-        8: 'hero.webp'        // Monument
-    };
-    return placeholders[itemId] || 'logo.png';
 }

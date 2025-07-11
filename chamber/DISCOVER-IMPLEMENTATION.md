@@ -66,18 +66,20 @@ Each card contains:
 
 ## 🖼️ Image Requirements
 
-**Note:** You need to create 8 WebP images (300px × 200px) for the discover items:
+**✅ COMPLETED:** All 8 WebP images (300px × 200px) are now in place:
 
-1. `sankore-university.webp`
-2. `djinguereber-mosque.webp`
-3. `manuscripts-museum.webp`
-4. `niger-river-port.webp`
-5. `grand-market.webp`
-6. `sidi-yahya-mosque.webp`
-7. `salt-mines.webp`
-8. `flame-peace-monument.webp`
+1. ✅ `sankore-university.webp` - Historic university building
+2. ✅ `djinguereber-mosque.webp` - Famous mud-brick mosque
+3. ✅ `manuscripts-museum.webp` - Museum or manuscript displays
+4. ✅ `niger-river-port.webp` - River port with boats
+5. ✅ `grand-market.webp` - Busy marketplace scene
+6. ✅ `sidi-yahya-mosque.webp` - Another historic mosque
+7. ✅ `salt-mines.webp` - Salt mining operation/landscape
+8. ✅ `flame-peace-monument.webp` - Peace monument
 
-**Current Status:** Using existing chamber images as placeholders
+**File Location:** `chamber/images/discover/`
+**JavaScript:** Updated to use actual WebP images instead of placeholders
+**Status:** ✅ All images now properly match their respective Timbuktu locations
 
 ## 🚀 Features Implemented
 
