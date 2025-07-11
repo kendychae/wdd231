@@ -26,7 +26,7 @@ function displayDiscoverItems(items) {
         
         card.innerHTML = `
             <figure class="card-image">
-                <img src="images/discover/${item.image}" alt="${item.name}" loading="lazy">
+                <img src="images/discover/${item.image}?v=${Date.now()}" alt="${item.name}" loading="lazy">
             </figure>
             <div class="card-content">
                 <h2>${item.name}</h2>
