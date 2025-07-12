@@ -1024,15 +1024,18 @@ footer {
 }
 
 .stat-card {
-  background: rgba(255, 255, 255, 0.1) !important;
-  border-radius: 12px !important;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
   text-align: center;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stat-card:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .stat-icon {
