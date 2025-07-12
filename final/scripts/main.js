@@ -5,11 +5,30 @@ import { LocalStorageManager } from './storageManager.js';
 import { ModalManager } from './modalManager.js';
 import DVStatisticsAPI from './statisticsAPI.js';
 
+// Function to update last modified date
+function updateLastModified() {
+    const lastModifiedElement = document.getElementById('lastModified');
+    if (lastModifiedElement) {
+        const lastModified = new Date(document.lastModified);
+        const options = { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        };
+        lastModifiedElement.textContent = lastModified.toLocaleDateString('en-US', options);
+    }
+}
+
 // Initialize components
 document.addEventListener('DOMContentLoaded', async function() {
     try {
         // Setup navigation
         setupNavigation();
+        
+        // Update last modified date
+        updateLastModified();
         
         // Initialize data manager
         const dataManager = new DataManager();

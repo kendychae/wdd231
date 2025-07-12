@@ -1,5 +1,25 @@
 // Navigation module - handles responsive navigation
+
+// Function to update last modified date
+function updateLastModified() {
+    const lastModifiedElement = document.getElementById('lastModified');
+    if (lastModifiedElement) {
+        const lastModified = new Date(document.lastModified);
+        const options = { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        };
+        lastModifiedElement.textContent = lastModified.toLocaleDateString('en-US', options);
+    }
+}
+
 export function setupNavigation() {
+    // Update last modified date when called
+    updateLastModified();
+    
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('nav-links');
     
