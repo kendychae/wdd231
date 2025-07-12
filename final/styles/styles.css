@@ -12,7 +12,7 @@
   --gray-medium: #95a5a6;
   --gray-dark: #7f8c8d;
   
-  --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   --font-secondary: Georgia, 'Times New Roman', Times, serif;
   --font-mono: 'Courier New', Courier, monospace;
   
@@ -248,11 +248,7 @@ nav {
   width: 80%;
   height: 80%;
   border-radius: 50%;
-  background: repeating-conic-gradient(
-    from 0deg,
-    transparent 0deg 12deg,
-    rgba(255, 255, 255, 0.1) 12deg 24deg
-  );
+  background: transparent;
   pointer-events: none;
 }
 
@@ -1298,5 +1294,32 @@ footer {
   
   h1, h2, h3 {
     page-break-after: avoid;
+  }
+}
+
+/* Emergency Link Styling */
+.emergency-link {
+  color: #ff6b6b !important;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.emergency-link:hover {
+  text-decoration: underline;
+}
+
+/* Main H1 Styling */
+main > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin: 2rem 0 1rem 0;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  main > h1 {
+    font-size: 2rem;
+    margin: 1rem 0 0.5rem 0;
   }
 }
