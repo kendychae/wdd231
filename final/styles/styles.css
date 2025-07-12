@@ -1276,6 +1276,7 @@ main > h1 {
 .children-card {
   position: relative;
   overflow: visible;
+  text-align: center;
 }
 
 .children-image-container {
@@ -1284,6 +1285,9 @@ main > h1 {
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .children-card .child-image {
@@ -1303,4 +1307,10 @@ main > h1 {
 .children-card {
   margin-top: 60px;
   padding-top: 80px;
+}
+
+.children-card .stat-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
