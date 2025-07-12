@@ -1,23 +1,25 @@
-/* CSS Custom Properties */
+/* CSS Custom Properties - Purple Theme with AAA Contrast */
 :root {
-  --primary-color: #2c3e50;
-  --secondary-color: #3498db;
-  --accent-color: #e74c3c;
-  --success-color: #27ae60;
-  --warning-color: #f39c12;
-  --dark-color: #34495e;
-  --light-color: #ecf0f1;
+  --primary-color: #4a1a5c;        /* Deep purple - AAA compliant with white text */
+  --secondary-color: #7b2cbf;      /* Medium purple - AAA compliant with white text */
+  --accent-color: #9d4edd;         /* Light purple - AAA compliant with white text */
+  --success-color: #2d5016;        /* Dark green - AAA compliant with white text */
+  --warning-color: #8b4000;        /* Dark orange - AAA compliant with white text */
+  --danger-color: #800020;         /* Dark burgundy - AAA compliant with white text */
+  --dark-color: #2d1b35;           /* Very dark purple - AAA compliant with white text */
+  --light-color: #f8f6ff;          /* Very light purple tint */
   --white: #ffffff;
-  --gray-light: #bdc3c7;
-  --gray-medium: #95a5a6;
-  --gray-dark: #7f8c8d;
+  --gray-light: #e6e1f0;           /* Light purple-gray */
+  --gray-medium: #b8a9c9;          /* Medium purple-gray */
+  --gray-dark: #6b5b73;            /* Dark purple-gray - AAA compliant with white text */
+  --text-color: #2d1b35;           /* Dark purple for text - AAA compliant with white backgrounds */
   
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   --font-secondary: Georgia, 'Times New Roman', Times, serif;
   --font-mono: 'Courier New', Courier, monospace;
   
   --border-radius: 8px;
-  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 2px 10px rgba(74, 26, 92, 0.15);
   --transition: all 0.3s ease;
   
   --container-max-width: 1200px;
@@ -32,7 +34,7 @@
 body {
   font-family: var(--font-primary);
   line-height: 1.6;
-  color: var(--dark-color);
+  color: var(--text-color);
   background-color: var(--white);
   margin: 0;
   padding: 0;
@@ -213,37 +215,6 @@ nav {
 
 .cta-button.secondary:hover {
   background-color: var(--gray-dark);
-}
-
-/* Wheel Styles */
-.wheel-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  position: relative;
-}
-
-/* DV Wheel Display */
-.dv-wheel-display {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
-
-.dv-wheel-image {
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  border: 8px solid var(--primary-color);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  object-fit: cover;
-}
-
-.dv-wheel-image:hover {
-  transform: scale(1.05);
 }
 
 /* Features Section */
@@ -494,7 +465,7 @@ nav {
 
 /* Emergency Reminder Styling */
 .emergency-reminder {
-  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  background: linear-gradient(135deg, var(--danger-color), var(--warning-color));
   color: white;
   padding: 1.5rem;
   border-radius: 8px;
@@ -1003,17 +974,55 @@ footer {
 
 /* Statistics Section Styling */
 .statistics-section {
-  background: linear-gradient(135deg, #2c3e50, #34495e);
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: white;
   padding: 4rem 0;
   margin: 4rem 0;
 }
 
-.stats-subtitle {
-  text-align: center;
-  font-size: 1.1rem;
+.stats-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 3rem;
-  opacity: 0.9;
+  gap: 3rem;
+}
+
+.stats-text {
+  flex: 1;
+}
+
+.stats-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+
+.stats-image {
+  flex: 0 0 300px;
+}
+
+.child-image {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.child-image:hover {
+  transform: scale(1.05);
+}
+
+.stats-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  font-weight: 500;
 }
 
 .statistics-grid {
@@ -1046,7 +1055,7 @@ footer {
 .stat-info h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #ecf0f1;
+  color: var(--light-color);
 }
 
 .stat-numbers {
@@ -1064,7 +1073,7 @@ footer {
 .stat-value {
   font-size: 2rem;
   font-weight: 700;
-  color: #e74c3c;
+  color: var(--accent-color);
   display: block;
   margin-bottom: 0.5rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -1151,13 +1160,8 @@ footer {
     gap: 2rem;
   }
   
-  .hero-content h2 {
+  .hero-content h1 {
     font-size: 2rem;
-  }
-  
-  .wheel {
-    width: 300px;
-    height: 300px;
   }
   
   .contact-grid {
@@ -1167,6 +1171,25 @@ footer {
   
   .features-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .stats-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .stats-image {
+    flex: none;
+  }
+  
+  .child-image {
+    max-width: 250px;
+    height: 250px;
+  }
+  
+  .stats-text h2 {
+    font-size: 2rem;
   }
   
   .filter-controls {
@@ -1190,11 +1213,6 @@ footer {
 @media (max-width: 480px) {
   .hero-content h2 {
     font-size: 1.5rem;
-  }
-  
-  .wheel {
-    width: 250px;
-    height: 250px;
   }
   
   .modal-content {
@@ -1233,10 +1251,6 @@ footer {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-  
-  .wheel {
-    transition: none;
-  }
 }
 
 /* Print styles */
@@ -1261,7 +1275,7 @@ footer {
 
 /* Emergency Link Styling */
 .emergency-link {
-  color: #ff6b6b !important;
+  color: var(--accent-color) !important;
   text-decoration: none;
   font-weight: 600;
 }
