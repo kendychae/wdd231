@@ -110,6 +110,9 @@ header {
 
 .logo img {
   border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
 }
 
 .logo h1 {
@@ -981,15 +984,8 @@ footer {
 }
 
 .stats-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
   margin-bottom: 3rem;
-  gap: 3rem;
-}
-
-.stats-text {
-  flex: 1;
 }
 
 .stats-text h2 {
@@ -997,25 +993,6 @@ footer {
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   font-weight: 600;
-}
-
-.stats-image {
-  flex: 0 0 300px;
-}
-
-.child-image {
-  width: 100%;
-  max-width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: 4px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.child-image:hover {
-  transform: scale(1.05);
 }
 
 .stats-subtitle {
@@ -1173,23 +1150,18 @@ footer {
     grid-template-columns: 1fr;
   }
   
-  .stats-header {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
+  .children-card {
+    margin-top: 40px;
+    padding-top: 60px;
   }
   
-  .stats-image {
-    flex: none;
+  .children-card .child-image {
+    width: 100px;
+    height: 100px;
   }
   
-  .child-image {
-    max-width: 250px;
-    height: 250px;
-  }
-  
-  .stats-text h2 {
-    font-size: 2rem;
+  .children-image-container {
+    top: -40px;
   }
   
   .filter-controls {
@@ -1298,4 +1270,37 @@ main > h1 {
     font-size: 2rem;
     margin: 1rem 0 0.5rem 0;
   }
+}
+
+/* Children Card Specific Styling */
+.children-card {
+  position: relative;
+  overflow: visible;
+}
+
+.children-image-container {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.children-card .child-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.children-card .child-image:hover {
+  transform: scale(1.1);
+}
+
+.children-card {
+  margin-top: 60px;
+  padding-top: 80px;
 }
