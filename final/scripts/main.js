@@ -3,6 +3,7 @@ import { setupNavigation } from './navigation.js';
 import { DataManager } from './dataManager.js';
 import { LocalStorageManager } from './storageManager.js';
 import { ModalManager } from './modalManager.js';
+import DVStatisticsAPI from './statisticsAPI.js';
 
 // Initialize components
 document.addEventListener('DOMContentLoaded', async function() {
@@ -19,6 +20,10 @@ document.addEventListener('DOMContentLoaded', async function() {
         
         // Initialize modal manager
         const modalManager = new ModalManager();
+        
+        // Initialize statistics API
+        const statisticsAPI = new DVStatisticsAPI();
+        statisticsAPI.start();
         
         // Initialize wheel functionality
         initializeWheel(dataManager, storageManager, modalManager);
