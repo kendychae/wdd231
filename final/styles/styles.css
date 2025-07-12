@@ -224,59 +224,26 @@ nav {
   position: relative;
 }
 
-.wheel {
+/* DV Wheel Display */
+.dv-wheel-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.dv-wheel-image {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  position: relative;
   border: 8px solid var(--primary-color);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-  background-image: url('../images/dv-wheel.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: transform 3s cubic-bezier(0.23, 1, 0.32, 1);
-  cursor: pointer;
+  transition: transform 0.3s ease;
+  object-fit: cover;
 }
 
-.wheel::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
-  border-radius: 50%;
-  background: transparent;
-  pointer-events: none;
-}
-
-.wheel-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--box-shadow);
-}
-
-.pointer {
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 30px solid var(--accent-color);
+.dv-wheel-image:hover {
+  transform: scale(1.05);
 }
 
 /* Features Section */
