@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us for questions about domestic violence resources or suggestions for our support hub">
+    <meta name="author" content="Kendy Chae">
+    <meta name="keywords" content="contact, domestic violence help, feedback, suggestions, support resources">
+    
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="Contact - Domestic Violence Resource Hub">
+    <meta property="og:description" content="Contact us for questions about domestic violence resources and support">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kendychae.github.io/wdd231/final/contact.html">
+    <meta property="og:image" content="https://kendychae.github.io/wdd231/final/images/share-image.webp">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact - Domestic Violence Resource Hub">
+    <meta name="twitter:description" content="Contact us for questions about domestic violence resources and support">
+    <meta name="twitter:image" content="https://kendychae.github.io/wdd231/final/images/share-image.webp">
+    
+    <title>Contact - Domestic Violence Resource Hub</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="DV Resource Hub Logo" width="50" height="50">
+                <h1>DV Resource Hub</h1>
+            </div>
+            <nav>
+                <button id="menu-toggle" class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We're here to support you. Share feedback or suggest additional resources for our community.</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>Have suggestions for additional resources? Want to share feedback about our platform? We're committed to improving support for survivors.</p>
+                        
+                        <div class="emergency-reminder">
+                            <h3>🚨 In Crisis? Get Immediate Help</h3>
+                            <p><strong>National Domestic Violence Hotline:</strong></p>
+                            <p><a href="tel:18007997233">1-800-799-7233</a></p>
+                            <p>24/7 confidential support</p>
+                        </div>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">📧</div>
+                                <div class="method-info">
+                                    <h3>Email</h3>
+                                    <p>support@dvresourcehub.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">💬</div>
+                                <div class="method-info">
+                                    <h3>Response Time</h3>
+                                    <p>We typically respond within 24-48 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">🤝</div>
+                                <div class="method-info">
+                                    <h3>Privacy</h3>
+                                    <p>All communications are handled with strict confidentiality</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form" action="thankyou.html" method="GET" novalidate>
+                            <h2>Send us a Message</h2>
+                            
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Please select a subject</option>
+                                    <option value="general">General Question</option>
+                                    <option value="resource-suggestion">Resource Suggestion</option>
+                                    <option value="feedback">Website Feedback</option>
+                                    <option value="accessibility">Accessibility Issue</option>
+                                    <option value="partnership">Organization Partnership</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error-message" id="subject-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="priority">Priority Level</label>
+                                <div class="radio-group">
+                                    <input type="radio" id="low" name="priority" value="low" checked>
+                                    <label for="low">Low</label>
+                                    
+                                    <input type="radio" id="medium" name="priority" value="medium">
+                                    <label for="medium">Medium</label>
+                                    
+                                    <input type="radio" id="high" name="priority" value="high">
+                                    <label for="high">High</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="experience">Your Web Development Experience</label>
+                                <select id="experience" name="experience">
+                                    <option value="beginner">Beginner (0-1 years)</option>
+                                    <option value="intermediate">Intermediate (1-3 years)</option>
+                                    <option value="advanced">Advanced (3+ years)</option>
+                                    <option value="professional">Professional Developer</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required minlength="10" maxlength="1000" placeholder="Please share your message, question, or suggestion..."></textarea>
+                                <span class="error-message" id="message-error"></span>
+                                <span class="char-count">0/1000 characters</span>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                                <label for="newsletter">Subscribe to our newsletter for web development tips and updates</label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">I agree to the terms and conditions *</label>
+                                <span class="error-message" id="terms-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn" id="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How often are new resources added?</h3>
+                        <p>We update our resource collection monthly with the latest and most relevant web development materials.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I suggest new topics for the wheel?</h3>
+                        <p>Absolutely! Use the contact form above to suggest new topics or resources you'd like to see added.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is this website suitable for beginners?</h3>
+                        <p>Yes! Our resources are categorized by difficulty level, making it perfect for learners at any stage.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How does the spinning wheel work?</h3>
+                        <p>The wheel uses JavaScript to randomly select from our curated list of web development topics and resources.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Web Dev Wheel</h3>
+                <p>Your interactive guide to web development mastery.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">All Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Video Demo</h3>
+                <p><a href="#" id="video-link" target="_blank">View Implementation Demo</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Kendy Chae. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/contact.js"></script>
+</body>
+</html>

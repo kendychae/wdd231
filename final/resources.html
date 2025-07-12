@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive directory of domestic violence support services, crisis hotlines, and resources for survivors and their supporters">
+    <meta name="author" content="Kendy Chae">
+    <meta name="keywords" content="domestic violence resources, crisis hotline, support services, shelters, legal aid">
+    
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="Domestic Violence Resources Directory">
+    <meta property="og:description" content="Comprehensive directory of support services and resources for domestic violence survivors">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kendychae.github.io/wdd231/final/resources.html">
+    <meta property="og:image" content="https://kendychae.github.io/wdd231/final/images/share-image.webp">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Domestic Violence Resources Directory">
+    <meta name="twitter:description" content="Comprehensive directory of support services and resources for domestic violence survivors">
+    <meta name="twitter:image" content="https://kendychae.github.io/wdd231/final/images/share-image.webp">
+    
+    <title>Resources Directory - Domestic Violence Support Services</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Domestic Violence Resource Hub Logo" width="50" height="50">
+                <h1>DV Resource Hub</h1>
+            </div>
+            <nav>
+                <button id="menu-toggle" class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html" class="active">All Resources</a></li>
+                    <li><a href="contact.html">Get Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Domestic Violence Support Resources</h1>
+                <p>Comprehensive directory of crisis support, counseling services, legal aid, and educational resources</p>
+                <div class="emergency-notice">
+                    <strong>🚨 In immediate danger? Call 911</strong><br>
+                    <span>National Domestic Violence Hotline: <a href="tel:18007997233">1-800-799-7233</a></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-controls">
+                    <label for="category-filter">Filter by Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="Emergency Support">Emergency Support</option>
+                        <option value="Educational Resources">Educational Resources</option>
+                        <option value="Government Resources">Government Resources</option>
+                        <option value="Legal Resources">Legal Resources</option>
+                        <option value="Support Services">Support Services</option>
+                        <option value="Youth Resources">Youth Resources</option>
+                        <option value="Specialized Support">Specialized Support</option>
+                        <option value="Workplace Resources">Workplace Resources</option>
+                        <option value="Advocacy">Advocacy</option>
+                        <option value="Statistics & Research">Statistics & Research</option>
+                    </select>
+                    
+                    <label for="difficulty-filter">Filter by Difficulty:</label>
+                    <select id="difficulty-filter">
+                        <option value="all">All Types</option>
+                        <option value="hotline">Crisis Hotlines</option>
+                        <option value="organization">Organizations</option>
+                        <option value="government">Government Resources</option>
+                        <option value="legal">Legal Resources</option>
+                        <option value="text">Text Support</option>
+                        <option value="youth">Youth Resources</option>
+                        <option value="specialized">Specialized Support</option>
+                        <option value="workplace">Workplace Resources</option>
+                        <option value="advocacy">Advocacy</option>
+                        <option value="research">Research & Statistics</option>
+                    </select>
+                    
+                    <button id="clear-filters">Clear Filters</button>
+                </div>
+                
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search resources, organizations, or services...">
+                    <button id="search-btn">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources-grid-section">
+            <div class="container">
+                <div id="resources-count" class="resources-count"></div>
+                <div id="resources-grid" class="resources-grid">
+                    <!-- Resources will be dynamically loaded here -->
+                </div>
+                <div id="loading" class="loading">Loading resources...</div>
+                <div id="no-results" class="no-results" style="display: none;">
+                    <p>No resources found matching your criteria.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Web Dev Wheel</h3>
+                <p>Your interactive guide to web development mastery.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">All Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Video Demo</h3>
+                <p><a href="#" id="video-link" target="_blank">View Implementation Demo</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Kendy Chae. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for displaying resource details -->
+    <div id="resource-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-resource-modal">&times;</span>
+            <div id="resource-modal-body">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/resources.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "title": "National Domestic Violence Hotline",
+    "category": "Emergency Support",
+    "description": "24/7 confidential support for domestic violence survivors and those who care about them. Provides crisis intervention, safety planning, and referrals to local resources.",
+    "phone": "1-800-799-7233",
+    "website": "https://www.thehotline.org/",
+    "availability": "24/7",
+    "languages": "Multiple languages available",
+    "type": "hotline"
+  },
+  {
+    "id": 2,
+    "title": "National Coalition Against Domestic Violence (NCADV)",
+    "category": "Educational Resources",
+    "description": "Leading national organization working to end domestic violence through education, advocacy, and policy reform. Provides comprehensive statistics and educational materials.",
+    "phone": "303-839-1852",
+    "website": "https://ncadv.org/",
+    "availability": "Business hours",
+    "languages": "English, Spanish resources",
+    "type": "organization"
+  },
+  {
+    "id": 3,
+    "title": "RAINN - National Sexual Assault Hotline",
+    "category": "Emergency Support",
+    "description": "Provides support for sexual assault survivors, which often overlaps with domestic violence. 24/7 confidential support and local referrals.",
+    "phone": "1-800-656-4673",
+    "website": "https://www.rainn.org/",
+    "availability": "24/7",
+    "languages": "English, Spanish",
+    "type": "hotline"
+  },
+  {
+    "id": 4,
+    "title": "Family Violence Prevention Services Program",
+    "category": "Government Resources",
+    "description": "U.S. Department of Health and Human Services program that funds domestic violence services nationwide. Provides directory of local services.",
+    "phone": "202-401-9215",
+    "website": "https://www.acf.hhs.gov/fysb/programs/family-violence-prevention-services",
+    "availability": "Business hours",
+    "languages": "Multiple languages",
+    "type": "government"
+  },
+  {
+    "id": 5,
+    "title": "National Center on Domestic Violence",
+    "category": "Educational Resources",
+    "description": "Provides training, technical assistance, and resources to domestic violence programs and advocates nationwide.",
+    "phone": "800-537-2238",
+    "website": "https://www.ncdv.org/",
+    "availability": "Business hours",
+    "languages": "English, Spanish",
+    "type": "organization"
+  },
+  {
+    "id": 6,
+    "title": "WomensLaw.org",
+    "category": "Legal Resources",
+    "description": "Provides legal information and resources for domestic violence survivors, including restraining orders, custody issues, and safety planning.",
+    "phone": "N/A",
+    "website": "https://www.womenslaw.org/",
+    "availability": "Online 24/7",
+    "languages": "English, Spanish",
+    "type": "legal"
+  },
+  {
+    "id": 7,
+    "title": "YWCA USA",
+    "category": "Support Services",
+    "description": "Operates domestic violence shelters and support programs across the United States. Provides emergency housing, counseling, and advocacy.",
+    "phone": "202-467-0801",
+    "website": "https://www.ywca.org/",
+    "availability": "Varies by location",
+    "languages": "Multiple languages",
+    "type": "organization"
+  },
+  {
+    "id": 8,
+    "title": "Love Is Respect",
+    "category": "Youth Resources",
+    "description": "National resource for teens and young adults experiencing dating abuse. Provides 24/7 support via phone, text, and chat.",
+    "phone": "1-866-331-9474",
+    "website": "https://www.loveisrespect.org/",
+    "availability": "24/7",
+    "languages": "English, Spanish",
+    "type": "youth"
+  },
+  {
+    "id": 9,
+    "title": "Crisis Text Line",
+    "category": "Emergency Support",
+    "description": "Free, 24/7 crisis support via text message. Trained counselors provide support for domestic violence situations.",
+    "phone": "Text HOME to 741741",
+    "website": "https://www.crisistextline.org/",
+    "availability": "24/7",
+    "languages": "English, Spanish",
+    "type": "text"
+  },
+  {
+    "id": 10,
+    "title": "National Resource Center on Domestic Violence",
+    "category": "Educational Resources",
+    "description": "Provides comprehensive resources, training materials, and research on domestic violence prevention and intervention.",
+    "phone": "800-537-2238",
+    "website": "https://www.nrcdv.org/",
+    "availability": "Business hours",
+    "languages": "Multiple languages",
+    "type": "organization"
+  },
+  {
+    "id": 11,
+    "title": "Bureau of Justice Statistics - Domestic Violence",
+    "category": "Statistics & Research",
+    "description": "Official U.S. government statistics on domestic violence incidents, trends, and criminal justice responses.",
+    "phone": "202-307-0765",
+    "website": "https://bjs.ojp.gov/topics/intimate-partner-violence",
+    "availability": "Online 24/7",
+    "languages": "English",
+    "type": "research"
+  },
+  {
+    "id": 12,
+    "title": "Safe Horizon",
+    "category": "Support Services",
+    "description": "Largest victim services organization in the U.S. Provides shelter, counseling, and advocacy for domestic violence survivors.",
+    "phone": "1-800-621-4673",
+    "website": "https://www.safehorizon.org/",
+    "availability": "24/7 hotline",
+    "languages": "Multiple languages",
+    "type": "organization"
+  },
+  {
+    "id": 13,
+    "title": "Office for Victims of Crime",
+    "category": "Government Resources",
+    "description": "U.S. Department of Justice office that provides funding and resources for victim services, including domestic violence programs.",
+    "phone": "202-307-5983",
+    "website": "https://ovc.ojp.gov/",
+    "availability": "Business hours",
+    "languages": "English, Spanish resources",
+    "type": "government"
+  },
+  {
+    "id": 14,
+    "title": "National Indigenous Women's Resource Center",
+    "category": "Specialized Support",
+    "description": "Provides culturally appropriate resources and support for Native American women experiencing domestic violence.",
+    "phone": "855-649-7299",
+    "website": "https://www.niwrc.org/",
+    "availability": "Business hours",
+    "languages": "English, Tribal languages",
+    "type": "specialized"
+  },
+  {
+    "id": 15,
+    "title": "Asian Pacific Institute on Gender-Based Violence",
+    "category": "Specialized Support",
+    "description": "Provides culturally specific resources and advocacy for Asian and Pacific Islander communities affected by domestic violence.",
+    "phone": "415-954-9988",
+    "website": "https://www.api-gbv.org/",
+    "availability": "Business hours",
+    "languages": "Multiple Asian languages",
+    "type": "specialized"
+  },
+  {
+    "id": 16,
+    "title": "Corporate Alliance to End Partner Violence",
+    "category": "Workplace Resources",
+    "description": "Provides resources for employers and employees on addressing domestic violence in the workplace.",
+    "phone": "309-664-0667",
+    "website": "https://www.caepv.org/",
+    "availability": "Business hours",
+    "languages": "English",
+    "type": "workplace"
+  },
+  {
+    "id": 17,
+    "title": "Futures Without Violence",
+    "category": "Educational Resources",
+    "description": "National organization focused on preventing and ending domestic violence through policy advocacy and education.",
+    "phone": "415-678-5500",
+    "website": "https://www.futureswithoutviolence.org/",
+    "availability": "Business hours",
+    "languages": "English, Spanish resources",
+    "type": "organization"
+  },
+  {
+    "id": 18,
+    "title": "National Network to End Domestic Violence",
+    "category": "Advocacy",
+    "description": "Leading voice for domestic violence victims and survivors, providing policy advocacy and public awareness.",
+    "phone": "202-543-5566",
+    "website": "https://nnedv.org/",
+    "availability": "Business hours",
+    "languages": "English, Spanish resources",
+    "type": "advocacy"
+  }
+]

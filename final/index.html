@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Domestic Violence Resource Hub - Find immediate help, support services, and educational resources for domestic violence survivors and their supporters">
+    <meta name="author" content="Kendy Chae">
+    <meta name="keywords" content="domestic violence, abuse support, crisis hotline, survivor resources, emergency help">
+    
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="Domestic Violence Resource Hub">
+    <meta property="og:description" content="Find immediate help and support resources for domestic violence survivors">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kendychae.github.io/wdd231/final/">
+    <meta property="og:image" content="https://kendychae.github.io/wdd231/final/images/share-image.webp">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Domestic Violence Resource Hub">
+    <meta name="twitter:description" content="Find immediate help and support resources for domestic violence survivors">
+    <meta name="twitter:image" content="https://kendychae.github.io/wdd231/final/images/share-image.webp">
+    
+    <title>Domestic Violence Resource Hub - Find Help and Support</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Domestic Violence Resource Hub Logo" width="50" height="50">
+                <h1>DV Resource Hub</h1>
+            </div>
+            <nav>
+                <button id="menu-toggle" class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="resources.html">All Resources</a></li>
+                    <li><a href="contact.html">Get Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Find Help and Support Resources</h2>
+                <p>If you or someone you know is experiencing domestic violence, you are not alone. This resource hub provides immediate access to support services, crisis hotlines, and educational materials.</p>
+                <div class="emergency-notice">
+                    <strong>🚨 In immediate danger? Call 911</strong><br>
+                    <span>National Domestic Violence Hotline: <a href="tel:18007997233">1-800-799-7233</a></span>
+                </div>
+                <button id="spin-btn" class="cta-button">Find a Random Resource</button>
+            </div>
+            <div class="wheel-container">
+                <div class="wheel" id="wheel">
+                    <div class="wheel-center">
+                        <div class="pointer"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Why Use This Resource Hub?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">�</div>
+                        <h3>Immediate Help</h3>
+                        <p>Quick access to crisis hotlines, emergency services, and immediate support resources for those in danger.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🤝</div>
+                        <h3>Support Services</h3>
+                        <p>Comprehensive directory of shelters, counseling services, legal aid, and advocacy organizations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Educational Resources</h3>
+                        <p>Learn about domestic violence, recognize warning signs, and find information for supporters and allies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-spins">
+            <div class="container">
+                <h2>Recently Accessed Resources</h2>
+                <div id="recent-spins-list" class="recent-spins-list">
+                    <p class="no-spins">Click "Find a Random Resource" to start discovering support services!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>DV Resource Hub</h3>
+                <p>Providing immediate access to domestic violence support and resources.</p>
+                <p><strong>Emergency:</strong> Call 911 or <a href="tel:18007997233" style="color: #ff6b6b;">1-800-799-7233</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">All Resources</a></li>
+                    <li><a href="contact.html">Get Help</a></li>
+                    <li><a href="attributions.html">Sources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Important Notice</h3>
+                <p>This website provides information and resources but is not a substitute for professional help. If you are in immediate danger, please call 911.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Kendy Chae. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for displaying selected topic -->
+    <div id="topic-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <div id="modal-body">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
