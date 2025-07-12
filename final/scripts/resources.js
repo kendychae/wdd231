@@ -215,7 +215,7 @@ class ResourcesPage {
         const bgColor = categoryColors[resource.category] || '#95a5a6';
         
         return `
-            <div class="resource-card" data-resource-id="${resource.id}">
+            <div class="card resource-card" data-resource-id="${resource.id}">
                 <div class="resource-category" style="background-color: ${bgColor}">
                     ${resource.category}
                 </div>

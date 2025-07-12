@@ -264,18 +264,22 @@ nav {
   gap: 2rem;
 }
 
-.feature-card {
+/* Base Card Styles */
+.card {
   background: var(--white);
   padding: 2rem;
   border-radius: var(--border-radius);
-  text-align: center;
   box-shadow: var(--box-shadow);
   transition: var(--transition);
 }
 
-.feature-card:hover {
+.card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card {
+  text-align: center;
 }
 
 .feature-icon {
@@ -407,17 +411,8 @@ nav {
 }
 
 .resource-card {
-  background: var(--white);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  padding: 1.5rem;
-  transition: var(--transition);
   cursor: pointer;
-}
-
-.resource-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
 }
 
 .resource-category {
@@ -1029,18 +1024,15 @@ footer {
 }
 
 .stat-card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 12px !important;
   text-align: center;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
 }
 
 .stat-icon {
