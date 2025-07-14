@@ -167,14 +167,16 @@
                             </div>
                             
                             <div class="form-group checkbox-group">
-                                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                                <input type="checkbox" id="newsletter" name="newsletter" value="yes" aria-describedby="newsletter-desc">
                                 <label for="newsletter">Subscribe to receive updates about new resources and support services</label>
+                                <span id="newsletter-desc" class="sr-only">Optional newsletter subscription</span>
                             </div>
                             
                             <div class="form-group checkbox-group">
-                                <input type="checkbox" id="terms" name="terms" required>
+                                <input type="checkbox" id="terms" name="terms" required aria-describedby="terms-desc">
                                 <label for="terms">I agree to the terms and conditions *</label>
                                 <span class="error-message" id="terms-error"></span>
+                                <span id="terms-desc" class="sr-only">Required agreement to terms and conditions</span>
                             </div>
                             
                             <button type="submit" class="submit-btn" id="submit-btn">Send Message</button>

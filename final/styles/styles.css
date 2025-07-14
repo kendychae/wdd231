@@ -231,8 +231,13 @@ main > h1 {
 
 .children-card {
   position: relative;
-  background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
-  color: var(--white);
+  background: linear-gradient(135deg, var(--accent-color), var(--secondary-color)) !important;
+  color: var(--white) !important;
+  border: none;
+}
+
+.children-card * {
+  color: var(--white) !important;
 }
 
 .children-image-container {
@@ -294,6 +299,119 @@ main > h1 {
 }
 
 .resource-website a::after { content: "↗"; font-size: 0.8rem; }
+
+/* Filter Controls */
+.filter-section {
+  background: var(--light-color);
+  padding: 2rem 0;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-controls label {
+  font-weight: 500;
+  color: var(--gray-dark);
+}
+
+.filter-controls select,
+.filter-controls button {
+  padding: 0.5rem;
+  border: 2px solid var(--gray-light);
+  border-radius: var(--border-radius);
+  background: var(--white);
+}
+
+#clear-filters {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+#clear-filters:hover {
+  background-color: var(--accent-color);
+}
+
+/* Search Box */
+.search-box {
+  margin: 1rem 0;
+}
+
+.search-box input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem;
+  border: 2px solid var(--gray-light);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(123, 44, 191, 0.1);
+}
+
+/* Loading and Error States */
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: var(--gray-medium);
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: var(--gray-medium);
+}
+
+.error-message {
+  color: var(--danger-color);
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: var(--white);
+  margin: 5% auto;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--gray-medium);
+}
+
+.close:hover {
+  color: var(--gray-dark);
+}
 
 /* Contact */
 .contact-form-container {
@@ -382,6 +500,19 @@ footer {
   padding-top: 2rem;
   border-top: 1px solid var(--accent-color);
   color: var(--gray-light);
+}
+
+/* Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Responsive Design */

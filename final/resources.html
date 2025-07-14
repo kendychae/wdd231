@@ -97,12 +97,13 @@
                         <option value="research">Research & Statistics</option>
                     </select>
                     
-                    <button id="clear-filters">Clear Filters</button>
+                    <button id="clear-filters" type="button" aria-label="Clear all filters">Clear Filters</button>
                 </div>
                 
                 <div class="search-box">
-                    <input type="text" id="search-input" placeholder="Search resources, organizations, or services...">
-                    <button id="search-btn">Search</button>
+                    <label for="search-input" class="sr-only">Search resources</label>
+                    <input type="text" id="search-input" placeholder="Search resources, organizations, or services..." aria-label="Search resources">
+                    <button id="search-btn" type="button" aria-label="Search">Search</button>
                 </div>
             </div>
         </section>
