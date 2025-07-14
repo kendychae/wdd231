@@ -527,14 +527,15 @@ nav {
 
 /* Contact Image Section */
 .privacy-image {
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   text-align: center;
+  padding: 1rem 0;
 }
 
 .stop-dv-inline {
   max-width: 100%;
   height: auto;
-  max-height: 200px;
+  max-height: 280px;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 15px rgba(74, 26, 92, 0.2);
 }
@@ -1219,7 +1220,7 @@ footer {
   }
   
   .stop-dv-inline {
-    max-height: 150px;
+    max-height: 180px;
   }
   
   .contact-grid {
