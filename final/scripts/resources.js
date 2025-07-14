@@ -22,6 +22,10 @@ function updateLastModified() {
 // Initialize components
 document.addEventListener('DOMContentLoaded', async function() {
     try {
+        // Show loading indicator
+        const loading = document.getElementById('loading');
+        if (loading) loading.style.display = 'block';
+        
         // Setup navigation
         setupNavigation();
         
@@ -38,9 +42,26 @@ document.addEventListener('DOMContentLoaded', async function() {
         const resourcesPage = new ResourcesPage(dataManager, modalManager);
         await resourcesPage.init();
         
+        // Hide loading indicator
+        if (loading) loading.style.display = 'none';
+        
     } catch (error) {
         console.error('Error initializing resources page:', error);
-        showErrorMessage('Failed to load resources. Please refresh the page.');
+        
+        // Hide loading and show error message
+        const loading = document.getElementById('loading');
+        const resourcesGrid = document.getElementById('resources-grid');
+        
+        if (loading) loading.style.display = 'none';
+        if (resourcesGrid) {
+            resourcesGrid.innerHTML = `
+                <div class="error-message" style="text-align: center; padding: 2rem; color: #e74c3c;">
+                    <h3>Unable to load resources</h3>
+                    <p>Please try refreshing the page or contact support if the problem persists.</p>
+                    <p><strong>Emergency:</strong> Call 911 or <a href="tel:18007997233">1-800-799-7233</a></p>
+                </div>
+            `;
+        }
     }
 });
 
