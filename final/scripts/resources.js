@@ -262,7 +262,8 @@ class ResourcesPage {
                 <h3 class="resource-title">${resource.title}</h3>
                 <p class="resource-description">${resource.description}</p>
                 <div class="resource-details">
-                    ${resource.phone ? `<p class="resource-phone"><strong>Phone:</strong> ${resource.phone}</p>` : ''}
+                    ${resource.phone ? `<p class="resource-phone"><strong>Phone:</strong> <a href="tel:${resource.phone.replace(/[^\d]/g, '')}">${resource.phone}</a></p>` : ''}
+                    ${resource.website ? `<p class="resource-website"><strong>Website:</strong> <a href="${resource.website}" target="_blank" rel="noopener noreferrer">Visit Website</a></p>` : ''}
                     ${resource.availability ? `<p class="resource-availability"><strong>Available:</strong> ${resource.availability}</p>` : ''}
                     ${resource.languages ? `<p class="resource-languages"><strong>Languages:</strong> ${resource.languages}</p>` : ''}
                 </div>
