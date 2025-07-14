@@ -526,21 +526,15 @@ nav {
 }
 
 /* Contact Image Section */
-.contact-image-section {
-  padding: 3rem 0;
-  background: var(--light-color);
+.privacy-image {
+  margin-top: 1.5rem;
+  text-align: center;
 }
 
-.contact-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.stop-dv-image {
+.stop-dv-inline {
   max-width: 100%;
   height: auto;
-  max-height: 300px;
+  max-height: 200px;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 15px rgba(74, 26, 92, 0.2);
 }
@@ -1224,8 +1218,8 @@ footer {
     max-height: 250px;
   }
   
-  .stop-dv-image {
-    max-height: 200px;
+  .stop-dv-inline {
+    max-height: 150px;
   }
   
   .contact-grid {
