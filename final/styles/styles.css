@@ -180,6 +180,21 @@ nav {
   padding: 0 2rem;
 }
 
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.hero-dv-wheel {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px rgba(74, 26, 92, 0.2);
+}
+
 .hero-content h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -464,6 +479,26 @@ nav {
 
 .contact-methods {
   margin-top: 2rem;
+}
+
+/* Contact Image Section */
+.contact-image-section {
+  padding: 3rem 0;
+  background: var(--light-color);
+}
+
+.contact-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stop-dv-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px rgba(74, 26, 92, 0.2);
 }
 
 /* Emergency Reminder Styling */
@@ -1139,6 +1174,14 @@ footer {
   
   .hero-content h1 {
     font-size: 2rem;
+  }
+  
+  .hero-dv-wheel {
+    max-height: 250px;
+  }
+  
+  .stop-dv-image {
+    max-height: 200px;
   }
   
   .contact-grid {
