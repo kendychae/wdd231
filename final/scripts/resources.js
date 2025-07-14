@@ -239,7 +239,6 @@ class ResourcesPage {
     }
     
     createResourceCard(resource) {
-        console.log('Creating card for resource:', resource.title, 'Website:', resource.website);
         const categoryColors = {
             'Emergency Support': '#e74c3c',
             'Educational Resources': '#3498db',
